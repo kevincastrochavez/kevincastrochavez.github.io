@@ -80,9 +80,13 @@ a {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     body {
         align-items: center;
+    }
+
+    header {
+        height: 20%;
     }
     
     img {
@@ -94,6 +98,7 @@ a {
     }
 
     footer {
+        height: 20%;
         font-size: 0.8rem;
     }
 
