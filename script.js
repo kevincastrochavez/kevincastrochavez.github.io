@@ -1,16 +1,11 @@
-const currentYear = document.getElementById('year')
-const updatedDate = document.getElementById('lastDate')
+window.addEventListener("load", () => {
+  const currentYear = document.getElementById("year");
+  const updatedDate = document.getElementById("lastDate");
 
-function getCurrentYear() {
-    const date = new Date()
-    const year = date.getFullYear()
-    currentYear.innerHTML = year
-}
+  const date = new Date();
+  const year = date.getFullYear();
+  const lastModified = new Date(document.lastModified).toLocaleString();
 
-function getLastModified() {
-    const lastModified = new Date(document.lastModified).toLocaleString()
-    updatedDate.innerHTML = lastModified
-}
-
-getCurrentYear()
-getLastModified()
+  currentYear.innerHTML = year;
+  updatedDate.innerHTML = lastModified;
+});

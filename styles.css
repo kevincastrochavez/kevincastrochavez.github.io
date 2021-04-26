@@ -1,108 +1,116 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 15%;
-    width: 100%;
-    color: white;
-    background-color: #206a5d;
-    border-radius: 0 0 15px 15px;
+  height: 15%;
+  width: 100%;
+  color: white;
+  background-color: #206a5d;
+  border-radius: 0 0 15px 15px;
 }
 
 img {
-    height: 200px;
-    position: absolute;
-    top: 4%;
-    right: 15%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 200px;
+  position: absolute;
+  top: 4%;
+  right: 15%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 main {
-    height: 70%;
-    padding: 20px;
+  height: 70%;
+  padding: 20px;
 }
 
 h2 {
-    padding: 10px 0;
-    border-bottom: 1px solid lightgray;
-    margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+  margin: 20px 0;
 }
 
 li {
-    margin: 5px 0;
+  margin: 5px 0;
+}
+
+li a {
+  text-decoration: none;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    height: 15%;
-    width: 100%;
-    color: white;
-    border-radius: 15px 15px 0 0;
-    background-color: #206a5d;
-    font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 15%;
+  width: 100%;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  background-color: #206a5d;
+  font-weight: 300;
 }
 
 .information {
-    display: flex;
-    margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .information > p {
-    padding: 0 8px;
-    border-right: 1px solid white;
+  padding: 0 8px;
+  border-right: 1px solid white;
 }
 
 .information > p:last-child {
-    border-right: none;
+  border-right: none;
 }
 
-a {
-    padding: 0 8px;
-    color: white;
+.information a {
+  padding: 0 8px;
+  color: white;
 }
 
 @media screen and (max-width: 900px) {
-    body {
-        align-items: center;
-    }
+  body {
+    align-items: center;
+  }
 
-    header {
-        height: 20%;
-    }
-    
-    img {
-        position: unset;
-        object-fit: cover;
-        height: 150px;
-        width: 150px;
-        margin-top: 20px;
-    }
+  header {
+    height: 20%;
+  }
 
-    footer {
-        height: 20%;
-        font-size: 0.8rem;
-    }
+  img {
+    position: unset;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+  }
 
-    .information {
-        margin-bottom: 4px;
-    }
+  footer {
+    height: 20%;
+    font-size: 0.8rem;
+  }
+
+  .information {
+    margin-bottom: 4px;
+  }
 }
