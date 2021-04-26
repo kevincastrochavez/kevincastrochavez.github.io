@@ -1,0 +1,78 @@
+body {
+  padding: 60px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  width: 25%;
+  background-color: white;
+}
+
+.content {
+  margin: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2,
+span,
+.blue-text {
+  color: #25b0eb;
+}
+
+p {
+  color: gray;
+}
+
+.price {
+  display: flex;
+}
+
+.price span {
+  margin: 6px;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 40px;
+  color: #25b0eb;
+}
+
+button {
+  width: 120px;
+  padding: 10px 15px;
+  background-color: lightgray;
+  color: white;
+  border: none;
+  box-shadow: 6px 7px 20px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 7px 20px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 7px 20px -8px rgba(0, 0, 0, 0.75);
+}
+
+.button-yellow {
+  background-color: #ffcf2d;
+}
+
+.popular {
+  background-color: #25b0eb;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-zero {
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
