@@ -87,30 +87,3 @@ footer {
   padding: 0 8px;
   color: white;
 }
-
-@media screen and (max-width: 900px) {
-  body {
-    align-items: center;
-  }
-
-  header {
-    height: 20%;
-  }
-
-  img {
-    position: unset;
-    object-fit: cover;
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
-  }
-
-  footer {
-    height: 20%;
-    font-size: 0.8rem;
-  }
-
-  .information {
-    margin-bottom: 4px;
-  }
-}
