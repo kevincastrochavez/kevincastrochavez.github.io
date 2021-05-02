@@ -6,4 +6,9 @@
   .info-container {
     padding: 10px 20px;
   }
+
+  footer {
+    font-size: 1rem;
+    height: 15%;
+  }
 }
