@@ -1,0 +1,32 @@
+@media only screen and (min-width: 34.5em) {
+  nav {
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  #navigation {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #navigation li {
+    display: block;
+  }
+
+  #navigation a {
+    text-align: center;
+  }
+
+  #navigation li:first-child {
+    display: none;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .purpose p {
+    max-width: 400px;
+  }
+}
