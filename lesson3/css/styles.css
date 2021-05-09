@@ -45,10 +45,8 @@ nav {
   transition: all 0.2s ease-in-out;
 }
 
-#navigation a:hover,
-#navigation a.active:hover,
 #navigation a.active {
-  border-bottom: 5px solid #cea354;
+  color: #cea354;
 }
 
 #navigation.responsive li {

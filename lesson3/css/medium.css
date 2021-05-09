@@ -18,6 +18,13 @@
     text-align: center;
   }
 
+  #navigation a:hover,
+  #navigation a.active:hover,
+  #navigation a.active {
+    border-bottom: 5px solid #cea354;
+    color: white;
+  }
+
   #navigation li:first-child {
     display: none;
   }
