@@ -1,0 +1,59 @@
+@media only screen and (min-width: 54.5em) {
+  header,
+  main h1,
+  .weather-summary,
+  .section-container,
+  .article-container,
+  .footer-container {
+    margin: 0 auto;
+    width: 770px;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  main h1 {
+    width: 800px;
+  }
+
+  #navigation,
+  .article-container,
+  .footer-container {
+    width: 800px;
+  }
+
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-container img {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .weather-summary {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    background-color: black;
+    width: unset;
+    opacity: 0.4;
+    padding: 15px;
+  }
+
+  .weather-summary h2,
+  .weather-summary p {
+    z-index: 2;
+    color: white;
+  }
+
+  .footer-container iframe {
+    flex: 0.6;
+  }
+
+  .contact-container {
+    flex: 0.3;
+  }
+}
