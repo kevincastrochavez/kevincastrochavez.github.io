@@ -95,19 +95,23 @@ main {
 }
 
 #pewter {
-  background-color: #84b0b7;
+  background-color: #00adb5;
 }
 
 #gray {
-  background-color: #d3d3d3;
+  background-color: #eeeeee;
 }
 
 #coral {
-  background-color: #ff8a5b;
+  background-color: #b50057;
 }
 
 #white {
   background-color: #fff;
+}
+
+#blue {
+  background-color: #222831;
 }
 
 #black {
