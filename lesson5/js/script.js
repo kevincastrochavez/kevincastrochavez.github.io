@@ -19,18 +19,28 @@ window.addEventListener("load", () => {
     "December",
   ];
 
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
   const date = new Date();
   const day = date.getDate();
   const month = date.getMonth();
   const year = date.getFullYear();
   const dayWeek = date.getDay();
 
-  dateFooter.innerHTML = `${day} ${months[month]} ${year}`;
+  dateFooter.innerHTML = `${days[dayWeek]}, ${day} ${months[month]} ${year}`;
 
   if (dayWeek !== 5) {
     banner.style.display = "none";
   } else {
-    banner.style.display = "block";
+    banner.style.display = "flex";
   }
 
   hamButton.addEventListener(

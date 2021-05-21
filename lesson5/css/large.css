@@ -1,7 +1,6 @@
 @media only screen and (min-width: 54.5em) {
   header,
   main h1,
-  .weather-summary,
   .section-container,
   .article-container,
   .footer-container {
@@ -24,23 +23,15 @@
   }
 
   .hero-container {
-    position: relative;
+    grid-template-columns: 1fr 30px 740px 30px 1fr;
   }
 
   .hero-container img {
-    max-width: 800px;
-    display: block;
-    margin: 0 auto 20px;
+    grid-column: 2/5;
   }
 
   .weather-summary {
-    position: absolute;
-    top: 20px;
-    left: 300px;
-    background-color: black;
-    width: unset;
-    opacity: 0.4;
-    padding: 15px;
+    grid-column: 3/4;
   }
 
   .weather-summary h2,

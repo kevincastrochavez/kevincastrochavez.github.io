@@ -5,6 +5,10 @@
     padding: 20px 30px;
   }
 
+  .banner img {
+    margin-left: 30px;
+  }
+
   nav {
     max-width: 100%;
 
@@ -38,27 +42,61 @@
     color: white;
   }
 
+  .hero-container {
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 20px 1fr 20px;
+    margin-bottom: 30px;
+  }
+
   .hero-container img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    grid-row: 1/4;
   }
 
-  .article-info {
+  .weather-summary {
+    width: 220px;
+    grid-row: 2/3;
+    background-color: black;
+    opacity: 0.6;
+    align-self: unset;
+
+    display: block;
+  }
+
+  .weather-summary h2,
+  .weather-summary p {
+    z-index: 2;
+    color: white;
+  }
+
+  .weather-info {
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .weather-info p {
+    flex: 0.5;
+  }
+
+  .weather-info span {
+    color: white;
+    flex: 0.3;
+  }
+
+  .article-info img {
+    width: 100%;
+    height: 250px;
   }
 
   .article-info p {
     flex: 0.5;
   }
 
-  .article-info img {
-    flex: 0.4;
-    margin-top: 0;
-    width: 70%;
-    height: 150px;
-    object-fit: cover;
+  .article-container h2 {
+    max-width: 700px;
   }
 
   .article-container,
