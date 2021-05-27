@@ -1,0 +1,147 @@
+@media only screen and (min-width: 34.5em) {
+  header,
+  main h1,
+  .weather-summary {
+    padding: 20px 30px;
+  }
+
+  .banner img {
+    margin-left: 30px;
+  }
+
+  nav {
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  #navigation {
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+  }
+
+  #navigation li {
+    display: block;
+  }
+
+  #navigation a {
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 5px solid transparent;
+  }
+
+  #navigation li:first-child {
+    display: none;
+  }
+
+  #navigation a:hover,
+  #navigation a.active:hover,
+  #navigation a.active {
+    border-bottom: 5px solid #b50057;
+    color: white;
+  }
+
+  .hero-container {
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 20px 1fr 20px;
+    margin-bottom: 30px;
+  }
+
+  .hero-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    grid-row: 1/4;
+  }
+
+  .weather-summary {
+    width: 220px;
+    grid-row: 2/3;
+    background-color: black;
+    opacity: 0.6;
+    align-self: unset;
+
+    display: block;
+  }
+
+  .weather-summary h2,
+  .weather-summary p {
+    z-index: 2;
+    color: white;
+  }
+
+  .weather-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .weather-info p {
+    flex: 0.5;
+  }
+
+  .weather-info span {
+    color: white;
+    flex: 0.3;
+  }
+
+  .article-info img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .article-info p {
+    flex: 0.5;
+  }
+
+  .article-container h2 {
+    max-width: 700px;
+  }
+
+  .article-container,
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .footer-container iframe {
+    flex: 0.5;
+  }
+
+  .contact-container {
+    flex: 0.4;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .contact i {
+    flex: 0.15;
+  }
+
+  #address {
+    display: block;
+    display: flex;
+  }
+
+  .social-icons {
+    width: 50%;
+    margin: 25px 0;
+    font-size: 1.3rem;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-icons i:hover {
+    color: #b50057;
+    cursor: pointer;
+  }
+}
