@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
+    <script defer src="js/windchill.js"></script>
     <title>Preston Idaho Actual Weather</title>
   </head>
   <body>
@@ -82,27 +83,32 @@
           <h2>Weather Summary</h2>
           <div class="weather-info">
             <p>Currently:</p>
-            <span>80°F</span>
+            <span id="temperature">80 °F</span>
           </div>
+
           <div class="weather-info">
             <p>High:</p>
-            <span>95°F</span>
+            <span>95 °F</span>
           </div>
+
           <div class="weather-info">
-            <p>Low:</p>
-            <span>52°F</span>
+            <p>Wind Chill:</p>
+            <span id="windChill"></span>
           </div>
+
           <div class="weather-info">
             <p>Precipitation:</p>
             <span>7%</span>
           </div>
+
           <div class="weather-info">
             <p>Humidity:</p>
             <span>37%</span>
           </div>
+
           <div class="weather-info">
             <p>Wind:</p>
-            <span>16mph</span>
+            <span id="windSpeed">16mph</span>
           </div>
         </div>
       </div>
