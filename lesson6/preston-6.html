@@ -58,7 +58,25 @@
       <h1>Preston Idaho</h1>
 
       <div class="hero-container">
-        <img src="./images/Hero.jpg" alt="Placeholder" />
+        <!-- <img src="./images/Hero.jpg" alt="Placeholder" /> -->
+
+        <h3 id="small">Small</h3>
+        <h3 id="medium">Medium</h3>
+        <h3 id="large">Large</h3>
+
+        <picture>
+          <source
+            media="(min-width: 54.5em)"
+            srcset="images/landscape600.jpg"
+          />
+
+          <source
+            media="(min-width: 34.5em)"
+            srcset="images/landscape400.jpg"
+          />
+
+          <img src="images/landscape250.jpg" alt="Landscape with clear sky" />
+        </picture>
 
         <div class="weather-summary">
           <h2>Weather Summary</h2>
