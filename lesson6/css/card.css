@@ -74,3 +74,8 @@ section {
 .images img {
   width: 100%;
 }
+
+.hero-container,
+.hero-container .relative-img {
+  width: 100px;
+}
