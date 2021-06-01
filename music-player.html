@@ -9,9 +9,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/music-player.css" />
   </head>
   <body>
-    <script src="script.js"></script>
+    <div class="player-container">
+      <div class="img-container">
+        <img src="images/song1.jpg" alt="Album Art" />
+      </div>
+      <h2 id="title">Electric Chill Machine</h2>
+      <h3 id="artist">Kevin</h3>
+      <audio src="music/song1.mp3" controls></audio>
+    </div>
+
+    <script src="js/music-player.js"></script>
   </body>
 </html>
