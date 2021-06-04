@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  justify-items: center;
+  grid-gap: 15px;
+}
+
+img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+
+  background-color: lightgray;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  body {
+    padding: 20px;
+    width: 970px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
