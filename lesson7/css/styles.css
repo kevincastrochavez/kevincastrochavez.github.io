@@ -133,7 +133,7 @@ main h1 {
 }
 
 footer {
-  background-color: var(--gray);
+  background-color: #f1f2f8;
   height: 50px;
 
   display: flex;
