@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin-top: 100px;
+}
+
+table {
+  width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.head {
+  background-color: #dbe4ea;
+}
+
+th {
+  color: rgb(102, 99, 99);
+  text-align: left;
+  font-size: 20px;
+  padding: 18px 10px;
+}
+
+.profile-pic img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+td {
+  padding: 20px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f8;
+}
+
+tr:hover {
+  background-color: #e7f2fd;
+}
+
+.active i,
+.waiting i {
+  font-size: 13px;
+}
+
+.active {
+  background-color: #ddfff1;
+  border-radius: 50px;
+  padding: 5px;
+  width: 100px;
+}
+
+.waiting {
+  background-color: #fef9e4;
+  border-radius: 50px;
+  padding: 5px;
+  width: 100px;
+}
+
+.active i {
+  color: #34bf76;
+}
+
+.waiting i {
+  color: #f3be16;
+}
+
+.material-icons {
+  color: gray;
+  padding: 12px;
+}
+
+.material-icons:hover {
+  background-color: lightgray;
+  border-radius: 50%;
+  color: blue;
+}
+
+.dropdown {
+  font-size: 17px;
+  color: rgb(97, 5, 97);
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.active i:hover,
+.waiting i:hover {
+  background-color: unset;
+}
