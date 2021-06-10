@@ -1,0 +1,154 @@
+:root {
+  --white: #ffffff;
+  --gray: #eeeeee;
+  --dark-blue: #222831;
+  --blue: #00adb5;
+  --violet: #b50057;
+  --font-heading: "Lato", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--dark-blue);
+}
+
+p,
+span,
+li {
+  font-family: var(--font-body);
+  color: var(--dark-blue);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 140%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+header img {
+  width: 64px;
+  margin-right: 20px;
+}
+
+.site p {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+nav {
+  padding: 0 17px;
+  background-color: var(--blue);
+}
+
+#navigation li {
+  display: none;
+  font-size: 1.2rem;
+}
+
+#navigation li:first-child {
+  display: block;
+}
+
+#navigation {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#navigation a {
+  padding: 15px 0;
+  color: var(--white);
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#navigation a.active {
+  color: var(--violet);
+}
+
+#navigation.responsive li {
+  display: block;
+}
+
+.ham img {
+  width: 40px;
+  color: white;
+  filter: brightness(0) invert(1);
+}
+
+main {
+  padding: 15px;
+}
+
+main h1 {
+  margin-top: 0;
+  padding-left: 15px;
+}
+
+.personal-info input,
+.storm-info input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  outline: none;
+}
+
+.personal-info label,
+.storm-info label {
+  margin-left: 10px;
+}
+
+#range {
+  padding: 0;
+}
+
+#regionLabel {
+  display: block;
+}
+
+#region {
+  width: 50%;
+  height: 40px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 20px;
+  outline: none;
+}
+
+footer {
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-body);
+}
