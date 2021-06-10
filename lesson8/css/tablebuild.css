@@ -52,6 +52,10 @@ tbody > tr:nth-child(5) > td:nth-child(3) {
   color: white;
 }
 
+tbody > tr:nth-child(6) > td:nth-child(1) {
+  font-style: italic;
+}
+
 thead,
 tbody {
   display: table;
