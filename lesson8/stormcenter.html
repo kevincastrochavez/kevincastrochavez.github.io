@@ -60,7 +60,14 @@
         <div class="info-container">
           <div class="personal-info">
             <label for="fullName">Full Name</label>
-            <input type="text" name="fullName" placeholder="John Doe" />
+            <input
+              type="text"
+              name="fullName"
+              placeholder="John Doe"
+              pattern="[A-Za-z]"
+              min="5"
+              required
+            />
 
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="johndoe@gmail.com" />
@@ -97,7 +104,14 @@
             </datalist>
 
             <label for="severity">Storm Severity</label>
-            <input type="range" name="severity" min="1" max="10" id="range" />
+            <input
+              type="range"
+              name="severity"
+              min="1"
+              max="10"
+              id="range"
+              onchange="updateRange(this.value)"
+            />
 
             <label for="region" id="regionLabel">Storm Region</label>
             <select name="region" id="region">
@@ -108,6 +122,24 @@
               <option value="soda">Soda Springs</option>
               <option value="haven">Fish Haven</option>
             </select>
+
+            <div class="radio-container">
+              <p>User in-danger level</p>
+
+              <div class="radio">
+                <label for="yes">Yes</label>
+                <input type="radio" name="yes" value="Yes" checked />
+
+                <label for="maybe">Maybe</label>
+                <input type="radio" name="maybe" value="Maybe" />
+
+                <label for="no">No</label>
+                <input type="radio" name="no" value="No" />
+              </div>
+            </div>
+
+            <label for="textArea">Additional Comments</label>
+            <textarea name="textArea" cols="30" rows="10"></textarea>
           </div>
         </div>
 
