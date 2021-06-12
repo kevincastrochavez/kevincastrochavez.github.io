@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site to display the weather and other information happening in Preston Idaho"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon.ico"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script src="js/script.js"></script>
+    <title>Thanks for your Submission</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/cloud.png" alt="Logo image for the Weathometer site" />
+
+      <div class="site">
+        <p>Weathometer</p>
+
+        <span>Measuring for you</span>
+      </div>
+    </header>
+
+    <nav>
+      <ul id="navigation">
+        <li>
+          <a class="ham"><img src="./images/menu.svg" alt="" /></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="https://kevincastrochavez.github.io/lesson5/preston-5.html"
+            >Preston</a
+          >
+        </li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a class="active" href="#">Storm Center</a></li>
+        <li>
+          <a href="https://kevincastrochavez.github.io/lesson7/gallery7.html"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="thanks">
+      <h1 id="thanksText">Thank you for filling out the form</h1>
+
+      <div class="thanksImg-container">
+        <img id="thanksImg" src="images/check.png" alt="" />
+      </div>
+
+      <button id="thanksButton" onclick="redirectForm()">Go Back Home</button>
+    </main>
+
+    <footer>
+      <div class="date"></div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Montserrat"],
+        },
+      });
+    </script>
+  </body>
+</html>

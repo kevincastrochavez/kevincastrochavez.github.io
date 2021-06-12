@@ -56,94 +56,146 @@
     <main>
       <h1>Storm Center</h1>
 
-      <form>
+      <form action="thanks.html">
         <div class="info-container">
           <div class="personal-info">
-            <label for="fullName">Full Name</label>
-            <input
-              type="text"
-              name="fullName"
-              placeholder="John Doe"
-              pattern="[A-Za-z]"
-              min="5"
-              required
-            />
+            <div class="name-container">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                name="fullName"
+                placeholder="John Doe"
+                pattern="[A-Za-z]{5}*"
+                min="5"
+                required
+              />
+            </div>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="johndoe@gmail.com" />
+            <div class="email-container">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="johndoe@gmail.com"
+              />
+            </div>
 
-            <label for="phoneNumber">Phone Number</label>
-            <input
-              type="tel"
-              name="phoneNumber"
-              placeholder="555-555-5555"
-              required
-            />
+            <div class="half-input">
+              <div class="phone-container">
+                <label for="phoneNumber">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  placeholder="555-555-5555"
+                  required
+                />
+              </div>
 
-            <label for="zipCode">Zip Code</label>
-            <input type="number" name="zipCode" placeholder="99999" required />
+              <div class="zip-container">
+                <label for="zipCode">Zip Code</label>
+                <input
+                  type="number"
+                  name="zipCode"
+                  placeholder="99999"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="date-container">
+              <label for="date">Storm Date</label>
+              <input type="date" name="date" />
+            </div>
+
+            <div class="type-container">
+              <label for="stormType">Storm Type</label>
+              <input
+                list="types"
+                name="stormType"
+                id="stormType"
+                placeholder="Choose the type of storm"
+              />
+              <datalist id="types">
+                <option value="Flash Food"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+              </datalist>
+            </div>
           </div>
 
           <div class="storm-info">
-            <label for="date">Storm Date</label>
-            <input type="date" name="date" />
+            <div class="severity-container">
+              <label for="severity">Storm Severity</label>
 
-            <label for="stormType">Storm Type</label>
-            <input
-              list="types"
-              name="stormType"
-              id="stormType"
-              placeholder="Choose the type of storm"
-            />
-            <datalist id="types">
-              <option value="Flash Food"></option>
-              <option value="Hail"></option>
-              <option value="Hurricane"></option>
-              <option value="Thunderstorm"></option>
-              <option value="Tornado"></option>
-            </datalist>
+              <div class="slider">
+                <input
+                  type="range"
+                  name="severity"
+                  min="1"
+                  max="10"
+                  step="1"
+                  value="5"
+                  list="tickmarks"
+                  onchange="updateTextInput(this.value);"
+                />
 
-            <label for="severity">Storm Severity</label>
-            <input
-              type="range"
-              name="severity"
-              min="1"
-              max="10"
-              id="range"
-              onchange="updateRange(this.value)"
-            />
+                <span id="range">5</span>
+              </div>
 
-            <label for="region" id="regionLabel">Storm Region</label>
-            <select name="region" id="region">
-              <option value="preston" disabled selected>
-                Select Region...
-              </option>
-              <option value="preston">Preston</option>
-              <option value="soda">Soda Springs</option>
-              <option value="haven">Fish Haven</option>
-            </select>
+              <datalist id="tickmarks">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+              </datalist>
+            </div>
+
+            <div class="region-container">
+              <label for="region" id="regionLabel">Storm Region</label>
+              <select name="region" id="region">
+                <option value="preston" disabled selected>
+                  Select Region...
+                </option>
+                <option value="preston">Preston</option>
+                <option value="soda">Soda Springs</option>
+                <option value="haven">Fish Haven</option>
+              </select>
+            </div>
 
             <div class="radio-container">
               <p>User in-danger level</p>
 
               <div class="radio">
                 <label for="yes">Yes</label>
-                <input type="radio" name="yes" value="Yes" checked />
+                <input type="radio" name="response" value="Yes" checked />
 
                 <label for="maybe">Maybe</label>
-                <input type="radio" name="maybe" value="Maybe" />
+                <input type="radio" name="response" value="Maybe" />
 
                 <label for="no">No</label>
-                <input type="radio" name="no" value="No" />
+                <input type="radio" name="response" value="No" />
               </div>
             </div>
 
-            <label for="textArea">Additional Comments</label>
-            <textarea name="textArea" cols="30" rows="10"></textarea>
+            <div class="comments-container">
+              <label for="textArea">Additional Comments</label>
+              <textarea name="textArea" cols="30" rows="10"></textarea>
+            </div>
           </div>
         </div>
 
-        <button>SEND FORM</button>
+        <button onsubmit="submitForm()" type="submit">
+          <span class="buttonText"> SEND FORM </span>
+        </button>
       </form>
     </main>
 

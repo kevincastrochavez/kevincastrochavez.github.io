@@ -37,10 +37,80 @@
     color: white;
   }
 
-  .images-container {
-    grid-template-columns: 1fr 1fr;
-    max-width: 740px;
-    margin: 0 auto;
-    padding: 30px;
+  .info-container {
+    display: flex;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .half-input {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+  }
+
+  .personal-info,
+  .storm-info,
+  .phone-container,
+  .zip-container {
+    flex: 0.5;
+  }
+
+  .slider {
+    width: 85%;
+  }
+
+  .slider input {
+    cursor: pointer;
+  }
+
+  .storm-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .personal-info input,
+  .storm-info input {
+    width: 80%;
+  }
+
+  .phone-container input,
+  .zip-container input {
+    width: 100%;
+  }
+
+  #region,
+  .radio {
+    width: 80%;
+  }
+
+  .email-container label,
+  .zip-container label {
+    display: block;
+  }
+
+  button {
+    width: 200px;
+    align-self: flex-end;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  #thanksButton {
+    align-self: center;
+    margin-top: 100px;
   }
 }

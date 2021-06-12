@@ -1,8 +1,20 @@
+const range = document.getElementById("range");
+const loader = document.querySelector(".loader");
+const button = document.querySelector("button");
+const buttonText = document.querySelector(".buttonText");
+
+function updateTextInput(val) {
+  range.textContent = val;
+}
+
+const redirectForm = () => {
+  location.href = "/stormcenter.html";
+};
+
 window.addEventListener("load", () => {
   const hamButton = document.querySelector(".ham");
   const mainNav = document.querySelector("#navigation");
   const dateFooter = document.querySelector(".date");
-  // const range = document.getElementById("range");
 
   const months = [
     "January",
@@ -36,10 +48,6 @@ window.addEventListener("load", () => {
   const dayWeek = date.getDay();
 
   dateFooter.innerHTML = `${days[dayWeek]}, ${day} ${months[month]} ${year}`;
-
-  // function updateRange(val) {
-  //   range.value = val;
-  // }
 
   hamButton.addEventListener(
     "click",
