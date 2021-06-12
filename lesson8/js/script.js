@@ -8,7 +8,7 @@ function updateTextInput(val) {
 }
 
 const redirectForm = () => {
-  location.href = "/stormcenter.html";
+  location.href = "/lesson8/stormcenter.html";
 };
 
 window.addEventListener("load", () => {
