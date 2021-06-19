@@ -42,7 +42,7 @@
     grid-template-columns: 1fr 1fr;
     max-width: 740px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px 30px;
   }
 
   .article-container,

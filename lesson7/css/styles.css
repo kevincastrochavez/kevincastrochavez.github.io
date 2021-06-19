@@ -119,7 +119,6 @@ nav {
 
 main {
   padding: 20px 0 0;
-  background-color: #f1f2f8;
 }
 
 main h1 {
@@ -138,6 +137,8 @@ main h1 {
   margin: 0 auto;
   background-color: white;
   border-radius: 10px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
 }
 
 .image-card img {
@@ -147,6 +148,8 @@ main h1 {
   height: 260px;
 
   object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 10px -1px;
 }
 
 .image-card h3 {
