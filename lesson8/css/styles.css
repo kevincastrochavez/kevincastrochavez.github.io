@@ -41,6 +41,28 @@ p {
   line-height: 140%;
 }
 
+.banner {
+  font-size: 14px;
+  padding: 10px 15px;
+  background-color: var(--violet);
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner img {
+  filter: brightness(0) invert(1);
+  width: 32px;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.banner p {
+  color: white;
+}
+
 header {
   display: flex;
   justify-content: center;

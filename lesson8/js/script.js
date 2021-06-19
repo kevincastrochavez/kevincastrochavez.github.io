@@ -2,6 +2,7 @@ const range = document.getElementById("range");
 const loader = document.querySelector(".loader");
 const button = document.querySelector("button");
 const buttonText = document.querySelector(".buttonText");
+const banner = document.querySelector(".banner");
 
 function updateTextInput(val) {
   range.textContent = val;
@@ -48,6 +49,12 @@ window.addEventListener("load", () => {
   const dayWeek = date.getDay();
 
   dateFooter.innerHTML = `${days[dayWeek]}, ${day} ${months[month]} ${year}`;
+
+  if (dayWeek !== 5) {
+    banner.style.display = "none";
+  } else {
+    banner.style.display = "flex";
+  }
 
   hamButton.addEventListener(
     "click",

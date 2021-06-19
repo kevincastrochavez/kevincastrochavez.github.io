@@ -12,7 +12,7 @@
   }
 
   #navigation {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 20px;
   }
 
@@ -24,6 +24,7 @@
     text-align: center;
     transition: all 0.2s ease-in-out;
     border-bottom: 5px solid transparent;
+    font-size: 16px;
   }
 
   #navigation li:first-child {

@@ -2,6 +2,7 @@ window.addEventListener("load", () => {
   const hamButton = document.querySelector(".ham");
   const mainNav = document.querySelector("#navigation");
   const dateFooter = document.querySelector(".date");
+  const banner = document.querySelector(".banner");
 
   const months = [
     "January",
@@ -35,7 +36,12 @@ window.addEventListener("load", () => {
   const dayWeek = date.getDay();
 
   dateFooter.innerHTML = `${days[dayWeek]}, ${day} ${months[month]} ${year}`;
-  print(dateFooter);
+
+  if (dayWeek !== 5) {
+    banner.style.display = "none";
+  } else {
+    banner.style.display = "flex";
+  }
 
   hamButton.addEventListener(
     "click",
