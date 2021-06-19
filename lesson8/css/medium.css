@@ -114,4 +114,49 @@
     align-self: center;
     margin-top: 100px;
   }
+
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .footer-container iframe {
+    flex: 0.5;
+  }
+
+  .contact-container {
+    flex: 0.4;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .contact i {
+    flex: 0.15;
+  }
+
+  #address {
+    display: block;
+    display: flex;
+  }
+
+  .social-icons {
+    width: 50%;
+    margin: 25px 0;
+    font-size: 1.3rem;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-icons i:hover {
+    color: #b50057;
+    cursor: pointer;
+  }
 }
