@@ -122,8 +122,12 @@ nav {
 }
 
 main {
-  padding: 40px 20px;
-  background-color: #f1f2f8;
+  padding: 0 20px 40px;
+}
+
+h1 {
+  margin: 0;
+  padding: 30px 0;
 }
 
 .sections-container {

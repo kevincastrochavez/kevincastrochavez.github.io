@@ -1,11 +1,15 @@
 @media only screen and (min-width: 54.5em) {
   header,
-  main h1,
   .section-container,
   .article-container,
   .footer-container {
     margin: 0 auto;
     width: 770px;
+  }
+
+  main h1 {
+    margin: 0 auto;
+    width: 800px;
   }
 
   .sections-container {
