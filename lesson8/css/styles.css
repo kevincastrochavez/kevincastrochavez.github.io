@@ -120,10 +120,8 @@ nav {
   display: block;
 }
 
-.ham img {
-  width: 40px;
-  color: white;
-  filter: brightness(0) invert(1);
+.fa-bars {
+  font-size: 29px;
 }
 
 main {
