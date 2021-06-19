@@ -1,6 +1,7 @@
 @media only screen and (min-width: 54.5em) {
   header,
-  main h1 {
+  main h1,
+  .footer-container {
     margin: 0 auto;
     width: 770px;
   }
@@ -38,5 +39,13 @@
       0px 2.6px 5.0375px rgba(12, 20, 33, 0.02),
       0px 1.37109px 2.99707px rgba(12, 20, 33, 0.016875),
       0px 0.56875px 1.79219px rgba(12, 20, 33, 0.013), inset 0px 2px 1px #ffffff;
+  }
+
+  .footer-container iframe {
+    flex: 0.6;
+  }
+
+  .contact-container {
+    flex: 0.3;
   }
 }
