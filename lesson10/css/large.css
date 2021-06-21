@@ -1,0 +1,50 @@
+@media only screen and (min-width: 54.5em) {
+  header,
+  main h1,
+  .section-container,
+  .article-container,
+  .footer-container {
+    margin: 0 auto;
+    width: 770px;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  main h1 {
+    width: 800px;
+  }
+
+  #navigation,
+  .article-container,
+  .footer-container {
+    width: 800px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr 30px 740px 30px 1fr;
+  }
+
+  .hero-container img {
+    grid-column: 2/5;
+  }
+
+  .weather-summary {
+    grid-column: 3/4;
+  }
+
+  .weather-summary h2,
+  .weather-summary p {
+    z-index: 2;
+    color: white;
+  }
+
+  .footer-container iframe {
+    flex: 0.6;
+  }
+
+  .contact-container {
+    flex: 0.3;
+  }
+}
