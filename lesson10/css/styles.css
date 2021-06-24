@@ -222,6 +222,11 @@ main h1 {
   align-items: center;
 }
 
+.forecast-container p {
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+
 .article-info {
   margin-top: 25px;
 }
