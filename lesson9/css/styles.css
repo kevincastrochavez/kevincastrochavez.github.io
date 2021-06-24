@@ -82,6 +82,7 @@ nav {
 
 #navigation li {
   display: none;
+  font-size: 1.2rem;
 }
 
 #navigation li:first-child {
