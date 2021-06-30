@@ -32,7 +32,6 @@
   }
 
   .image-card:hover {
-    cursor: pointer;
     box-shadow: 0px 13px 31px rgba(12, 20, 33, 0.04),
       0px 9.45547px 20.8947px rgba(12, 20, 33, 0.032375),
       0px 6.58125px 13.5141px rgba(12, 20, 33, 0.027),
