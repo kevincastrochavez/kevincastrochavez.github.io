@@ -103,7 +103,8 @@
 
   button:hover {
     cursor: pointer;
-    filter: brightness(0.8);
+    /* filter: brightness(0.8); */
+    background-color: hsl(183, 60%, 35%);
   }
 
   button:active {
