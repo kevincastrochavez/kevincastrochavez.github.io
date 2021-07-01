@@ -4,6 +4,18 @@ const button = document.querySelector("button");
 const buttonText = document.querySelector(".buttonText");
 const banner = document.querySelector(".banner");
 
+const date = new Date();
+const day = date.getDate();
+const month = date.getMonth();
+const year = date.getFullYear();
+const dayWeek = date.getDay();
+
+if (dayWeek !== 5) {
+  banner.style.display = "none";
+} else {
+  banner.style.display = "flex";
+}
+
 function updateTextInput(val) {
   range.textContent = val;
 }
@@ -42,19 +54,7 @@ window.addEventListener("load", () => {
     "Saturday",
   ];
 
-  const date = new Date();
-  const day = date.getDate();
-  const month = date.getMonth();
-  const year = date.getFullYear();
-  const dayWeek = date.getDay();
-
   dateFooter.innerHTML = `${days[dayWeek]}, ${day} ${months[month]} ${year}`;
-
-  if (dayWeek !== 5) {
-    banner.style.display = "none";
-  } else {
-    banner.style.display = "flex";
-  }
 
   hamButton.addEventListener(
     "click",
