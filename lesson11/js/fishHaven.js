@@ -23,25 +23,26 @@ const days = [
   "Saturday",
 ];
 
+const banner = document.querySelector(".banner");
+const dateFooter = document.querySelector(".date");
+
+const date = new Date();
+const day = date.getDate();
+const month = date.getMonth();
+const year = date.getFullYear();
+const dayWeek = date.getDay();
+
+if (dayWeek !== 5) {
+  banner.style.display = "none";
+} else {
+  banner.style.display = "flex";
+}
+
 window.addEventListener("load", () => {
   const hamButton = document.querySelector(".ham");
   const mainNav = document.querySelector("#navigation");
-  const dateFooter = document.querySelector(".date");
-  const banner = document.querySelector(".banner");
-
-  const date = new Date();
-  const day = date.getDate();
-  const month = date.getMonth();
-  const year = date.getFullYear();
-  const dayWeek = date.getDay();
 
   dateFooter.innerHTML = `${days[dayWeek]}, ${day} ${months[month]} ${year}`;
-
-  if (dayWeek !== 5) {
-    banner.style.display = "none";
-  } else {
-    banner.style.display = "flex";
-  }
 
   hamButton.addEventListener(
     "click",
@@ -56,7 +57,8 @@ window.addEventListener("load", () => {
 });
 
 const API_KEY = "90110c6c5296ba96a34270bcbcee731b";
-const CITY_ID = "5604473";
+const LAT = "42.0378428865101";
+const LON = "-111.39594260214028";
 const currentCond = document.getElementById("condition");
 const high = document.getElementById("high");
 const currentTemp = document.getElementById("temperature");
@@ -64,7 +66,7 @@ const humidity = document.getElementById("humidity");
 const windSpeed = document.getElementById("windSpeed");
 const windChill = document.getElementById("windChill");
 
-const url = `https://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&appid=${API_KEY}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${API_KEY}&units=imperial`;
 
 const apiCall = () => {
   fetch(url)
@@ -106,7 +108,7 @@ const fiveDayForecast = async () => {
     document.querySelectorAll(".forecast-temperature")
   );
 
-  const url = `https://api.openweathermap.org/data/2.5/forecast?id=${CITY_ID}&appid=${API_KEY}&units=imperial`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${API_KEY}&units=imperial`;
   const response = await fetch(url);
   const data = await response.json();
 
