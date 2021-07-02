@@ -2,7 +2,7 @@
   --white: #ffffff;
   --gray: #eeeeee;
   --dark-blue: #222831;
-  --blue: #00adb5;
+  --blue: hsl(183, 100%, 35%);
   --violet: #b50057;
   --font-heading: "Lato", sans-serif;
   --font-body: "Montserrat", sans-serif;
