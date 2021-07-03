@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site to display the weather and other information happening in Preston Idaho"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images//favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+      rel="preload"
+      as="style"
+      media="none"
+      onload="if(media!=='all')media='all'"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css//home/styles.css" />
+    <link rel="stylesheet" href="css/home/medium.css" />
+    <link rel="stylesheet" href="css/home/large.css" />
+    <script defer src="js/script.js"></script>
+    <title>Preston Idaho Actual Weather</title>
+  </head>
+  <body>
+    <div class="banner">
+      <img src="./images/pancake.png" alt="" />
+
+      <p>
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+        park pavilion.
+      </p>
+    </div>
+
+    <header>
+      <img src="./images/cloud.png" alt="Logo image for the Weathometer site" />
+
+      <div class="site">
+        <p>Weathometer</p>
+
+        <span>Measuring for you</span>
+      </div>
+    </header>
+
+    <nav>
+      <ul id="navigation">
+        <li>
+          <a class="ham"><i class="fa fa-bars"></i></a>
+        </li>
+        <li><a class="active" href="#">Home</a></li>
+        <li>
+          <a href="https://kevincastrochavez.github.io/lesson10/preston-10.html"
+            >Preston</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://kevincastrochavez.github.io/lesson11/sodaSprings.html"
+            >Soda Springs</a
+          >
+        </li>
+        <li>
+          <a href="https://kevincastrochavez.github.io/lesson11/fishHaven.html"
+            >Fish Haven</a
+          >
+        </li>
+        <li>
+          <a href="https://kevincastrochavez.github.io/lesson8/stormcenter.html"
+            >Storm Center</a
+          >
+        </li>
+        <li>
+          <a href="https://kevincastrochavez.github.io/lesson7/gallery7.html"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Awesome Towns</h1>
+
+      <div class="sections-container"></div>
+
+      <div class="wireframes">
+        <a
+          href="https://www.figma.com/file/XpnDkyNPcAvYiibsHm0QjG/Weathometer-Homepage-Wireframes?node-id=0%3A1"
+          target="_blank"
+          >Wireframes</a
+        >
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="contact-container">
+          <h3>Contact Information</h3>
+
+          <div class="contact-info">
+            <div class="contact" id="address">
+              <i class="fas fa-map-marker-alt"></i>
+
+              <p>525 S Center St</p>
+            </div>
+
+            <div class="contact">
+              <i class="fas fa-phone"></i>
+
+              <p>555-555-5555</p>
+            </div>
+
+            <div class="contact">
+              <i class="fas fa-envelope"></i>
+
+              <p>johndoe@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="social-icons">
+            <i class="fab fa-twitter"></i>
+
+            <i class="fab fa-facebook-f"></i>
+
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.9973704240456!2d-111.7854436851135!3d43.81441395001005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1621057012178!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <div class="date"></div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Montserrat"],
+        },
+      });
+    </script>
+  </body>
+</html>

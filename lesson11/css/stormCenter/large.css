@@ -1,0 +1,39 @@
+@media only screen and (min-width: 54.5em) {
+  main {
+    padding: 0;
+  }
+
+  main h1,
+  form,
+  #navigation,
+  .footer-container {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  form {
+    width: 740px;
+  }
+
+  .slider {
+    width: 90%;
+  }
+
+  form {
+    margin: 10px auto 20px;
+  }
+
+  .personal-info input,
+  .storm-info input {
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
+  .footer-container iframe {
+    flex: 0.6;
+  }
+
+  .contact-container {
+    flex: 0.3;
+  }
+}

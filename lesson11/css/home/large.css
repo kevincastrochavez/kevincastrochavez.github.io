@@ -1,0 +1,68 @@
+@media only screen and (min-width: 54.5em) {
+  header,
+  .section-container,
+  .article-container,
+  .footer-container {
+    margin: 0 auto;
+    width: 770px;
+  }
+
+  main h1 {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  .sections-container {
+    margin: 0 auto;
+    width: 800px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section {
+    height: 423px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  section:nth-child(2) {
+    flex-direction: column;
+  }
+
+  section:nth-child(2) img {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .town-info {
+    height: 75px;
+  }
+
+  .info,
+  .img-container {
+    width: 100%;
+  }
+
+  .info {
+    padding: 20px 15px;
+  }
+
+  .img-container img {
+    border-radius: 0 0 8px 8px;
+  }
+
+  #navigation,
+  .footer-container {
+    width: 800px;
+  }
+
+  .footer-container iframe {
+    flex: 0.6;
+  }
+
+  .contact-container {
+    flex: 0.3;
+  }
+}
