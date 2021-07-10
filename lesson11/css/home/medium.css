@@ -101,7 +101,7 @@
     display: flex;
   }
 
-  .contact i {
+  .contact img {
     flex: 0.15;
   }
 
@@ -119,8 +119,7 @@
     justify-content: space-around;
   }
 
-  .social-icons i:hover {
-    color: #b50057;
-    cursor: pointer;
+  .social-icons img {
+    width: 21px;
   }
 }

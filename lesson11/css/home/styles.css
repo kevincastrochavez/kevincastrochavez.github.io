@@ -66,6 +66,7 @@ header {
 
 header img {
   width: 64px;
+  height: 64px;
   margin-right: 20px;
 }
 
@@ -112,8 +113,15 @@ nav {
   display: block;
 }
 
-.ham {
-  font-size: 1.5em;
+.ham img {
+  width: 25px;
+  height: 29px;
+  object-fit: cover;
+  filter: brightness(0) invert(1);
+}
+
+.ham img:hover {
+  cursor: pointer;
 }
 
 main {
@@ -223,18 +231,15 @@ footer {
   margin-bottom: 5px;
 }
 
-.contact i {
+.contact img {
+  width: 16px;
+  height: 16px;
   flex: 0.1;
-  color: var(--blue);
 }
 
 .contact p {
   flex: 1;
   font-size: 0.8rem;
-}
-
-.contact i {
-  padding-left: 5px;
 }
 
 .social-icons {
