@@ -69,8 +69,6 @@ async function getRegions() {
       town.name === "Fish Haven"
   );
 
-  console.log(filteredArray);
-
   filteredArray.map((item) => {
     const section = document.createElement("section");
     const infoContainer = document.createElement("div");
