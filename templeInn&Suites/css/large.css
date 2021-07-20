@@ -1,0 +1,104 @@
+@media screen and (min-width: 900px) {
+  .wrapper nav {
+    max-width: 1000px;
+  }
+
+  nav .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .content .links {
+    display: flex;
+    max-width: unset;
+  }
+
+  .content .links li a:hover,
+  .content .links li label:hover {
+    background: #323c4e;
+  }
+
+  .content .links ul {
+    position: absolute;
+    background: #171c24;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .content .links li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+  }
+
+  .content .links li ul li a {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px !important;
+  }
+
+  .content .links li a img {
+    margin-left: 5px;
+    margin-bottom: 2px;
+  }
+
+  .content .links ul ul {
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 8px);
+  }
+  .content .links ul li {
+    position: relative;
+  }
+  .content .links ul li:hover ul {
+    top: 0;
+  }
+
+  .wrapper .menu-icon {
+    display: none;
+  }
+
+  nav .content .links {
+    position: unset;
+    background: transparent;
+    top: 0px;
+    padding-bottom: 0px;
+    overflow-y: unset;
+  }
+
+  .content .links li {
+    margin: 0;
+  }
+
+  .content .links li a {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .content .links li label {
+    display: none;
+  }
+
+  .content .links li a.desktop-link {
+    display: block;
+  }
+
+  .content .links ul,
+  .content .links ul ul {
+    max-height: unset;
+  }
+
+  .content .links ul li {
+    margin: 0;
+  }
+
+  .content .links ul li a {
+    font-size: 16px;
+  }
+}
