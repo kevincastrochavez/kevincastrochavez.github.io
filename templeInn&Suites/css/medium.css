@@ -1,2 +1,63 @@
 @media screen and (min-width: 550px) {
+  .hero {
+    height: 300px;
+
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: 40px 1fr 40px;
+  }
+
+  .hero span {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  .buttons-hero button {
+    padding: 20px;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .buttons-hero button:nth-child(2) {
+    display: flex;
+    margin-left: 15px;
+    background-color: transparent;
+    border: 3px solid var(--tyffany);
+    height: 63px;
+  }
+
+  .buttons-hero button:nth-child(1):hover {
+    background-color: var(--tyffany);
+  }
+
+  .buttons-hero button:nth-child(2):hover {
+    border: 3px solid var(--cyan);
+  }
+
+  .card {
+    width: calc(100% - 80px);
+    max-width: 600px;
+  }
+
+  .img-container {
+    height: 300px;
+  }
+
+  .links-container,
+  .logo-icons {
+    padding: 20px 40px 40px;
+  }
+
+  .logo-footer,
+  .icons-footer {
+    padding: 0;
+  }
+
+  .icons-footer {
+    width: 200px;
+  }
+
+  .logo-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

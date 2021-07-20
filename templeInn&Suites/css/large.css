@@ -79,6 +79,7 @@
   .content .links li a {
     font-size: 16px;
     cursor: pointer;
+    color: var(--onyx);
   }
 
   .content .links li label {
@@ -100,5 +101,54 @@
 
   .content .links ul li a {
     font-size: 16px;
+  }
+
+  .hero {
+    height: 400px;
+    grid-template-columns: 1fr 1000px 1fr;
+  }
+
+  .card {
+    display: flex;
+    width: calc(100% - 80px);
+    max-width: 1000px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .img-container {
+    height: 361px;
+    width: 50%;
+  }
+
+  .img-container img {
+    object-position: left;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .info-container {
+    padding: 70px 50px;
+  }
+
+  .milestones-container {
+    margin-top: 40px;
+  }
+
+  .milestone {
+    margin-bottom: 10px;
+  }
+
+  .column {
+    width: 33.3%;
+  }
+
+  .links-container,
+  .copyright p,
+  .logo-icons {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .copyright p {
+    width: unset;
   }
 }
