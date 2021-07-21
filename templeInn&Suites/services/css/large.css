@@ -107,42 +107,20 @@
     font-size: 16px;
   }
 
-  .hero {
-    height: 400px;
-    grid-template-columns: 1fr 1000px 1fr;
-  }
-
-  .hero span {
-    font-size: 4rem;
-  }
-
-  .card {
-    display: flex;
+  main h1 {
     width: calc(100% - 80px);
     max-width: 1000px;
-    border-radius: 0 10px 10px 0;
+    margin: 0 auto;
   }
 
-  .img-container {
-    height: 361px;
-    width: 50%;
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
 
-  .img-container img {
-    object-position: left;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .info-container {
-    padding: 70px 50px;
-  }
-
-  .milestones-container {
-    margin-top: 40px;
-  }
-
-  .milestone {
-    margin-bottom: 10px;
+  .amenities {
+    margin-top: 0;
   }
 
   .column {

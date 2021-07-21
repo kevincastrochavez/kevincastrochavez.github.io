@@ -1,0 +1,30 @@
+@media screen and (min-width: 550px) {
+  .services p,
+  .amenities p {
+    width: 500px;
+  }
+
+  .links-container,
+  .logo-icons {
+    padding: 20px 40px 40px;
+  }
+
+  .logo-footer,
+  .icons-footer {
+    padding: 0;
+  }
+
+  .icons-footer {
+    width: 200px;
+  }
+
+  .icons-footer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
