@@ -21,8 +21,11 @@ const displayTemples = async () => {
     milestonesContainer.classList.add("milestones-container");
 
     link.setAttribute("href", `${temple.url}`);
-    img.setAttribute("src", `../../images/${temple.image}`);
-    img.setAttribute("alt", `../../images/${temple.name}`);
+    img.setAttribute(
+      "src",
+      `https://kevincastrochavez.github.io/templeInn&Suites/images/${temple.image}`
+    );
+    img.setAttribute("alt", `${temple.name}`);
     infoSpan.textContent = temple.location;
     infoH2.textContent = temple.name;
 
