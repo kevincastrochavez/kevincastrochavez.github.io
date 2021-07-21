@@ -1,4 +1,8 @@
 @media screen and (min-width: 550px) {
+  nav {
+    border-bottom: 1px solid #e4e4e5;
+  }
+
   .services p,
   .amenities p {
     width: 500px;
