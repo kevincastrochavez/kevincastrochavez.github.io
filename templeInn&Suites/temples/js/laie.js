@@ -16,6 +16,15 @@ const displayTemple = async () => {
     const book = document.createElement("a");
     const contact = document.createElement("a");
 
+    book.setAttribute(
+      "href",
+      "https://kevincastrochavez.github.io/templeInn&Suites/reservations"
+    );
+    contact.setAttribute(
+      "href",
+      "https://kevincastrochavez.github.io/templeInn&Suites/contact"
+    );
+
     const infoContainer = document.createElement("div");
     const infoH1 = document.createElement("h1");
     const section = document.createElement("section");
