@@ -1,5 +1,7 @@
 const displayTemple = async () => {
-  const response = await fetch("../../temples.json");
+  const response = await fetch(
+    "https://kevincastrochavez.github.io/templeInn&Suites/temples.json"
+  );
   const templesArray = await response.json();
   const filteredArray = templesArray.filter(
     (temple) => temple.name === "Calgary Alberta Temple"
