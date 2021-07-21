@@ -145,7 +145,6 @@ nav .content .links {
 
 .hero {
   height: 200px;
-  position: relative;
 
   display: grid;
   grid-template-columns: 20px 1fr 20px;
@@ -185,36 +184,17 @@ nav .content .links {
   align-items: flex-end;
 }
 
-.buttons-hero button {
+.buttons-hero a {
   padding: 15px;
   background-color: var(--cyan);
+  border: 3px solid transparent;
   font-weight: 700;
   color: var(--white);
-  border: none;
   border-radius: 5px;
 }
 
-.buttons-hero button:nth-child(2) {
+.buttons-hero a:nth-child(2) {
   display: none;
-}
-
-.card {
-  width: 100%;
-  max-width: 335px;
-  margin: 50px auto 60px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 0 0 10px 10px;
-}
-
-.img-container {
-  height: 200px;
-}
-
-.img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
 }
 
 .info-container {
@@ -225,7 +205,7 @@ nav .content .links {
   color: var(--sonic);
 }
 
-.info-container h2 {
+.info-container h1 {
   color: var(--onyx);
 }
 
@@ -236,7 +216,33 @@ nav .content .links {
 .milestone {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 5px;
+  margin: 5px 0;
+  max-width: 330px;
+}
+
+.info-container h2 {
+  margin: 50px 0 15px;
+  color: var(--cyan);
+}
+
+.closures {
+  margin-bottom: 20px;
+}
+
+.closures span {
+  font-weight: bold;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.address p {
+  margin: 2px 0;
+}
+
+.phone {
+  margin-top: 15px;
 }
 
 footer {
@@ -244,7 +250,7 @@ footer {
 }
 
 .links-container {
-  padding: 20px;
+  padding: 0 20px 20px;
 
   display: flex;
   flex-wrap: wrap;
@@ -265,9 +271,15 @@ footer {
   letter-spacing: 3px;
 }
 
-.column a {
+.column a,
+.column p {
   margin-bottom: 10px;
   color: var(--sonic);
+  transition: all 0.2s ease-in-out;
+}
+
+.column a:hover {
+  color: var(--tyffany);
 }
 
 .logo-footer {
@@ -304,6 +316,6 @@ footer {
   color: var(--tyffany) !important;
 }
 
-button:hover {
+a:hover {
   cursor: pointer;
 }
