@@ -102,7 +102,7 @@ const displayTemple = async () => {
     address.classList.add("address");
     phone.classList.add("phone");
 
-    img.setAttribute("src", `../../images/${temple.image}`);
+    img.setAttribute("src", `./../../images/${temple.image}`);
     spanHero.textContent = temple.location;
     book.textContent = "Book Now";
     contact.textContent = "Contact";
