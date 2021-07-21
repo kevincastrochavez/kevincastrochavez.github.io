@@ -60,7 +60,7 @@
       "Rededicated": "13 June 1978",
       "Rededicated2": "27 November 2010"
     },
-    "templeClosure": [
+    "templeClosures": [
       {
         "2021": [
           "Tuesday, 21 September 2021 (Limited Operations)",
@@ -107,7 +107,7 @@
       "Groundbreaking": "30 July 2005",
       "Dedicated": "10 February 2008"
     },
-    "templeClosure": [
+    "templeClosures": [
       {
         "2021": [
           "Friday, 23 July 2021 (Limited Operations)",
@@ -134,7 +134,7 @@
     "phase": "3"
   },
   {
-    "name": "Veracruz Alberta Temple",
+    "name": "Veracruz Mexico Temple",
     "location": "Veracruz, Mexico",
     "url": "veracruz.html",
     "address": {
@@ -155,7 +155,7 @@
       "Groundbreaking": "29 May 1999",
       "Dedicated": "9 July 2000"
     },
-    "templeClosure": [
+    "templeClosures": [
       {
         "2021": [
           "Monday, 6 September 2021 - Monday, 22 November 2021",
