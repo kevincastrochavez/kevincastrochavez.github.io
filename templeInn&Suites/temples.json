@@ -2,6 +2,7 @@
   {
     "name": "Calgary Alberta Temple",
     "location": "Alberta, Canada",
+    "url": "canada.html",
     "address": {
       "firstLine": "9802 Rocky Ridge Rd NW",
       "secondLine": "Calgary AB T3G 5J7",
@@ -38,6 +39,7 @@
   {
     "name": "Laie Hawaii Temple",
     "location": "Hawaii, U.S.A.",
+    "url": "laie.html",
     "address": {
       "firstLine": "55-600 Naniloa Loop",
       "secondLine": "Laie HI 96762-2202",
@@ -86,6 +88,7 @@
   {
     "name": "Rexburg Idaho Temple",
     "location": "Idaho, U.S.A.",
+    "url": "rexburg.html",
     "address": {
       "firstLine": "750 S 2nd E",
       "secondLine": "Rexburg ID 83440-5404",
@@ -133,6 +136,7 @@
   {
     "name": "Veracruz Alberta Temple",
     "location": "Veracruz, Mexico",
+    "url": "veracruz.html",
     "address": {
       "firstLine": "Ave. Ejercito Mexicano Esq. Michoacan",
       "secondLine": "Colonia Luis Echeverria",

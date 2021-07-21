@@ -18,6 +18,7 @@ const displayTemples = async () => {
     infoContainer.classList.add("info-container");
     milestonesContainer.classList.add("milestones-container");
 
+    link.setAttribute("href", `${temple.url}`);
     img.setAttribute("src", `../../images/${temple.image}`);
     img.setAttribute("alt", `../../images/${temple.name}`);
     infoSpan.textContent = temple.location;
