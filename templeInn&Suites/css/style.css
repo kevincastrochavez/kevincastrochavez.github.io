@@ -185,7 +185,7 @@ nav .content .links {
   align-items: flex-end;
 }
 
-.buttons-hero button {
+.buttons-hero a {
   padding: 15px;
   background-color: var(--cyan);
   font-weight: 700;
@@ -194,7 +194,7 @@ nav .content .links {
   border-radius: 5px;
 }
 
-.buttons-hero button:nth-child(2) {
+.buttons-hero a:nth-child(2) {
   display: none;
 }
 

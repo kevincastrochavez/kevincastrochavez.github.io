@@ -116,6 +116,10 @@
     font-size: 4rem;
   }
 
+  .buttons-hero a {
+    padding: 20px 30px;
+  }
+
   .card {
     display: flex;
     width: calc(100% - 80px);
@@ -166,5 +170,6 @@
 
   .logo-icons {
     padding: 40px 0;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
