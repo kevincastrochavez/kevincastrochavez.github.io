@@ -1,0 +1,126 @@
+@media screen and (min-width: 550px) {
+  .hero {
+    height: 300px;
+
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: 40px 1fr 40px;
+  }
+
+  .hero span {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  .buttons-hero a {
+    padding: 20px;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .buttons-hero a:nth-child(1) {
+    border: 3px solid transparent;
+  }
+
+  .buttons-hero a:nth-child(2) {
+    display: flex;
+    margin-left: 15px;
+    background-color: transparent;
+    border: 3px solid var(--tyffany);
+  }
+
+  .buttons-hero a:nth-child(1):hover {
+    border: 3px solid var(--tyffany);
+    background: transparent;
+  }
+
+  .buttons-hero a:nth-child(2):hover {
+    border: 3px solid var(--cyan);
+    background: var(--cyan);
+  }
+
+  .card {
+    width: calc(100% - 80px);
+    max-width: 600px;
+  }
+
+  .img-container {
+    height: 300px;
+  }
+
+  .name-container,
+  .location-container,
+  .date,
+  .phone-container,
+  .home-state,
+  .room-container,
+  .number-rooms {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .storm-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #region,
+  .radio {
+    width: 80%;
+  }
+
+  .personal-info input {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .email-container label,
+  .zip-container label {
+    display: block;
+  }
+
+  button {
+    width: 200px;
+    align-self: flex-end;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: hsl(183, 60%, 35%);
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  .links-container,
+  .logo-icons {
+    padding: 20px 40px 40px;
+  }
+
+  .logo-footer,
+  .icons-footer {
+    padding: 0;
+  }
+
+  .icons-footer {
+    width: 200px;
+  }
+
+  .icons-footer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

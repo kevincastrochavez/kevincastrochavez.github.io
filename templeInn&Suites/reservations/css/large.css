@@ -1,0 +1,184 @@
+@media screen and (min-width: 900px) {
+  .wrapper nav {
+    max-width: 1000px;
+  }
+
+  nav .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .content .links {
+    display: flex;
+    max-width: unset;
+  }
+
+  .content .links li a:hover,
+  .content .links li label:hover {
+    color: var(--cyan);
+  }
+
+  .content .links ul {
+    position: absolute;
+    background: #171c24;
+    top: 70px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .content .links li:hover > ul {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+  }
+
+  .content .links li ul li a {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px !important;
+    color: white;
+    font-weight: 300;
+  }
+
+  .content .links li a img {
+    margin-left: 5px;
+    margin-bottom: 2px;
+    filter: brightness(1) invert(1);
+  }
+
+  .content .links ul ul {
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 8px);
+  }
+  .content .links ul li {
+    position: relative;
+  }
+  .content .links ul li:hover ul {
+    top: 0;
+  }
+
+  .wrapper .menu-icon {
+    display: none;
+  }
+
+  nav .content .links {
+    position: unset;
+    background: transparent;
+    top: 0px;
+    padding-bottom: 0px;
+    overflow-y: unset;
+  }
+
+  .content .links li {
+    margin: 0;
+  }
+
+  .content .links li a {
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--onyx);
+    font-weight: 700;
+  }
+
+  .content .links li label {
+    display: none;
+  }
+
+  .content .links li a.desktop-link {
+    display: block;
+  }
+
+  .content .links ul,
+  .content .links ul ul {
+    max-height: unset;
+  }
+
+  .content .links ul li {
+    margin: 0;
+  }
+
+  .content .links ul li a {
+    font-size: 16px;
+  }
+
+  main h1 {
+    width: calc(100 - 80px);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .info-container {
+    padding: 40px 20px;
+  }
+
+  .milestones-container {
+    margin-top: 40px;
+  }
+
+  .milestone {
+    margin-bottom: 10px;
+  }
+
+  form {
+    width: calc(100 - 80px);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .personal-info input,
+  .storm-info input {
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
+  .footer-container iframe {
+    flex: 0.6;
+  }
+
+  .contact-container {
+    flex: 0.3;
+  }
+
+  button {
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover {
+    background: transparent;
+    border: 3px solid var(--cyan);
+  }
+
+  button:hover > span {
+    color: var(--cyan);
+  }
+
+  .column {
+    width: 33.3%;
+  }
+
+  .links-container,
+  .copyright p,
+  .logo-icons {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .copyright p {
+    width: unset;
+  }
+
+  .links-container {
+    padding: 20px 0;
+  }
+
+  .logo-icons {
+    padding: 40px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
