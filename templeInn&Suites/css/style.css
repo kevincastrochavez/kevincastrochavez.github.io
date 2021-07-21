@@ -206,6 +206,10 @@ nav .content .links {
   border-radius: 0 0 10px 10px;
 }
 
+.card-container {
+  color: black;
+}
+
 .img-container {
   height: 200px;
 }
