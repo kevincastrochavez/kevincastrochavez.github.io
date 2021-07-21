@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Temple Inn & Suites</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search" />
+        <input type="checkbox" id="show-menu" />
+        <label for="show-menu" class="menu-icon"
+          ><img id="menu" src="../../images/menugreen.svg" alt="Menu Icon"
+        /></label>
+        <div class="content">
+          <a href="#">
+            <div class="logo">
+              <img src="../../images/logogreen.svg" alt="Logo Icon" />
+            </div>
+          </a>
+          <ul class="links">
+            <li><a class="active-link" href="#">Home</a></li>
+            <li>
+              <a href="temples/index.html" class="desktop-link"
+                >Temples
+                <img src="../../images/dropdown.svg" alt="Dropdown icon"
+              /></a>
+              <input type="checkbox" id="show-temples" />
+              <label for="show-temples"
+                >Temples
+                <img src="../../images/dropdown.svg" alt="Dropdown icon"
+              /></label>
+              <ul>
+                <li><a href="#">Calgary, Alberta</a></li>
+                <li><a href="#">Laie, Hawaii</a></li>
+                <li><a href="#">Rexburg, Idaho</a></li>
+                <li><a href="#">Veracruz, Mexico</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Reservations</a></li>
+            <li>
+              <a href="#" class="desktop-link"
+                >Services
+                <img src="../../images/dropdown.svg" alt="Dropdown icon"
+              /></a>
+              <input type="checkbox" id="show-services" />
+              <label for="show-services"
+                >Services
+                <img src="../../images/dropdown.svg" alt="Dropdown icon"
+              /></label>
+              <ul>
+                <li><a href="#">Full-Time Missionary</a></li>
+                <li><a href="#">Reception</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <h1>Contact Us</h1>
+
+      <div class="contact-container">
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" placeholder="John Doe" />
+        </div>
+
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" placeholder="johndoe@gmail.com" />
+        </div>
+
+        <div class="comments">
+          <label for="comments">Comments</label>
+          <textarea
+            rows="3"
+            type="text"
+            placeholder="Could you give me more information about ...?"
+          ></textarea>
+        </div>
+
+        <button>Send Form</button>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370284854!2d-77.09772048528721!3d38.98325594948481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1ses!2sus!4v1626855479549!5m2!1ses!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div class="links-container">
+        <div class="column">
+          <h4>TEMPLES</h4>
+
+          <a href="">Alberta</a>
+          <a href="">Laie</a>
+          <a href="">Rexburg</a>
+          <a href="">Veracruz</a>
+        </div>
+
+        <div class="column">
+          <h4>SERVICES</h4>
+
+          <a href="">Reception</a>
+          <a href="">Full-Time Temple Missionary</a>
+        </div>
+
+        <div class="column">
+          <h4>CONTACT</h4>
+
+          <a href=""
+            >4800 Montgomery Ln #300 <br />
+            Bethesda, MD 20814 <br />
+            United states</a
+          >
+          <a href="">+1 555-55-5555</a>
+        </div>
+      </div>
+
+      <div class="logo-icons">
+        <div class="logo-footer">
+          <img src="../../images/logoGray.svg" alt="Logo in footer" />
+
+          <p>Temple Inn <br />& Suites</p>
+        </div>
+
+        <div class="icons-footer">
+          <img src="../../images/instagram.svg" alt="" />
+          <img src="../../images/twitter.svg" alt="" />
+          <img src="../../images/facebook.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2021 Temple Inn & Suites. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
