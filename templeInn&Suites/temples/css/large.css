@@ -107,6 +107,13 @@
     font-size: 16px;
   }
 
+  main h1 {
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+  }
+
   .hero {
     height: 400px;
     grid-template-columns: 1fr 1000px 1fr;
@@ -162,9 +169,11 @@
 
   .links-container {
     padding: 20px 0;
+    width: calc(100% - 40px);
   }
 
   .logo-icons {
-    padding: 40px 0;
+    padding: 40px 0 20px;
+    width: calc(100% - 40px);
   }
 }
