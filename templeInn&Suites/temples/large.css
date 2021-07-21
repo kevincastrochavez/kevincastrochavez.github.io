@@ -116,6 +116,10 @@
     font-size: 4rem;
   }
 
+  .buttons-hero a {
+    padding: 20px 30px;
+  }
+
   .img-container {
     height: 361px;
     width: 50%;
@@ -129,7 +133,7 @@
   .info-container {
     width: calc(100% - 80px);
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     padding: 0;
 
     display: grid;
